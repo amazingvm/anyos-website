@@ -13,5 +13,3 @@ def template_router(template):
         return flask.render_template(template + '.html')
     except TemplateNotFound:
         flask.abort(404)
-
-app.run(port=80, host='0.0.0.0')
